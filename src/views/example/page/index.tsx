@@ -1,7 +1,9 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const ExamplePageView = () => {
+import { ExamplePageViewProps } from '../../../type/RootStackPrams';
+
+const ExamplePageView = (_props: ExamplePageViewProps) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Example Page View</Text>

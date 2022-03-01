@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 
-const HomeView = ({ navigation }) => {
+import { homeViewProps } from '../../type/RootStackPrams';
+
+const HomeView = ({ navigation }: homeViewProps) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home View</Text>
