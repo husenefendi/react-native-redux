@@ -22,7 +22,7 @@ const MainRoute = () => {
   };
 
   useEffect(() => {
-    // handleLoading();
+    handleLoading();
   }, []);
 
   return isLoading ? <SplashScreenView /> : <SwhitchRoutes />;

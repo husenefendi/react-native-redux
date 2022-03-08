@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { StatusBar, View } from 'react-native';
 import LogoComponent from '~components/Logo';
 
 import styles from './style';
 
-const SplashScreenView = (): ReactNode => {
+const SplashScreenView = (): JSX.Element => {
   return (
     <>
       <StatusBar barStyle={'light-content'} />
