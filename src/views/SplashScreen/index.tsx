@@ -1,11 +1,17 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { ReactNode } from 'react';
+import { StatusBar, View } from 'react-native';
+import LogoComponent from '~components/Logo';
 
-const SplashScreenView = () => {
+import styles from './style';
+
+const SplashScreenView = (): ReactNode => {
   return (
-    <View>
-      <Text>Splash Screen</Text>
-    </View>
+    <>
+      <StatusBar barStyle={'light-content'} />
+      <View style={styles.container}>
+        <LogoComponent zoom={2} />
+      </View>
+    </>
   );
 };
 
