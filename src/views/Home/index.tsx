@@ -11,6 +11,10 @@ const HomeView = ({ navigation }: homeViewProps) => {
         title="Move to Example Page"
         onPress={() => navigation.navigate('ExamplePage')}
       />
+      <Button
+        title="Go to Example Post"
+        onPress={() => navigation.navigate('ExamplePost')}
+      />
     </View>
   );
 };
