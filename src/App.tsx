@@ -12,12 +12,15 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
 import MainRoute from '~router';
+import { NativeBaseProvider } from 'native-base';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <MainRoute />
-    </NavigationContainer>
+    <NativeBaseProvider>
+      <NavigationContainer>
+        <MainRoute />
+      </NavigationContainer>
+    </NativeBaseProvider>
   );
 };
 

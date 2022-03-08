@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { Box } from 'native-base';
 
 import { ExamplePostViewProps } from '~type/RootStackPrams';
 
@@ -7,9 +8,9 @@ const ExamplePostView = (props: ExamplePostViewProps) => {
   console.log({ props });
 
   return (
-    <View>
+    <Box>
       <Text>Example Post View</Text>
-    </View>
+    </Box>
   );
 };
 
