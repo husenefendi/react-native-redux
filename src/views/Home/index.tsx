@@ -4,11 +4,13 @@ import { useTailwind } from 'tailwind-rn';
 
 import { homeViewProps } from '../../type/RootStackPrams';
 
-const HomeView = ({ navigation }: homeViewProps) => {
+const HomeView = (props: homeViewProps) => {
+  const { navigation } = props;
   const tailwind = useTailwind();
+  console.log({ props, tailwind: tailwind('text-blue-600') });
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text className="'text-blue-600 p-4">Home View</Text>
+      <Text>Home View</Text>
       <Button
         title="Move to Example Page"
         onPress={() => navigation.navigate('ExamplePage')}

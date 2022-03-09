@@ -11,10 +11,13 @@ import { store } from './src/app/store';
 import App from './src/App';
 import { name as appName } from './app.json';
 
+const Root = () => (
+  <TailwindProvider utilities={utilities}>
+    <App />
+  </TailwindProvider>
+);
 AppRegistry.registerComponent(appName, () => () => (
   <Provider store={store}>
-    <TailwindProvider utilities={utilities}>
-      <App />
-    </TailwindProvider>
+    <Root />
   </Provider>
 ));
